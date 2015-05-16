@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    tools:context="edu.adil.liguelorraine.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/auth_btn"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/jeton_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/logo"
+        android:text="@string/setjeton_btn_lib" />
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/username_field"
+        android:layout_below="@+id/username_field"
+        android:ems="10"
+        android:hint="@string/auth_txt_pass"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/username_field"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jeton_btn"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/auth_txt_user" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/auth_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_field"
+        android:layout_below="@+id/password_field"
+        android:layout_marginTop="28dp"
+        android:text="@string/auth_btn_lib" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>
